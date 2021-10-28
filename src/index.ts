@@ -3,14 +3,17 @@ let segundonumero: number = document.getElementById("segundonumero");
 
 let btn = document.getElementById("btn");
 btn.addEventListener("click", () => {
+let primernumero:number=primernumero.value;
+let segundonumero:number=segundonumero.value;
 
-let suma, sumando: number;
-sumando = primernumero.value;
-suma = 0;
+let suma, actual: number;
+actual = primernumero
+suma= 0;
 
-while (sumando <= segundonumero.value) {
-  suma = suma+sumando;
-  sumando++;
+while (sumando <= segundonumero) {
+  suma = suma+actual;
+  actual++;
 
-  console.log("El total de la suma de los nùmeros consecutivos es:", suma);
+  
 }}
+console.log("El total de la suma de los nùmeros consecutivos es:", suma);
